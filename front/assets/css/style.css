@@ -300,21 +300,15 @@ header.is-scrolled .nav-toggle span {
 .hero-slide {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(135deg, #1C3A38 0%, #0A1F1E 100%);
+	background-size: cover;
+	background-position: center;
+	background-color: #0F3634;
 	opacity: 0;
 	transition: opacity 1.6s ease;
 }
 
 .hero-slide.is-active {
 	opacity: 1;
-}
-
-.hero-slide .photo-block {
-	position: absolute;
-	inset: 0;
-	border: none;
-	border-radius: 0;
-	background: linear-gradient(135deg, #23504D 0%, #0A1F1E 100%);
 }
 
 .hero::after {
