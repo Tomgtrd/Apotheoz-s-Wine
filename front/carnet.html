@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>L'Apothéoz de la semaine — Apotheoz Wines</title>
+	<title>Le Carnet — Apotheoz Wines</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -20,7 +20,8 @@
 			<a href="index.html" class="logo">Apotheoz<span>.</span></a>
 			<div class="nav-links">
 				<a href="prestations.html">Prestations</a>
-				<a href="index.html#about">À propos</a>
+				<a href="carnet.html">Le Carnet</a>
+				<a href="index.html#about">Qui je suis</a>
 				<a href="index.html#contact">Contact</a>
 			</div>
 			<a href="index.html#contact" class="nav-cta">Me contacter</a>
@@ -32,7 +33,8 @@
 
 	<div class="mobile-menu" id="mobileMenu">
 		<a href="prestations.html">Prestations</a>
-		<a href="index.html#about">À propos</a>
+		<a href="carnet.html">Le Carnet</a>
+		<a href="index.html#about">Qui je suis</a>
 		<a href="index.html#contact">Contact</a>
 		<a href="index.html#contact" class="mobile-cta">Me contacter</a>
 	</div>
@@ -40,35 +42,58 @@
 	<div class="page-header">
 		<div class="container">
 			<div class="kicker">Coups de cœur</div>
-			<h1>L'Apothéoz de la semaine</h1>
+			<h1>Le Carnet</h1>
 			<p>Une claque sur un vin, un accord mets-vin qui a tout changé, une dégustation à l'aveugle qui a
-				surpris tout le monde — le format varie d'une semaine à l'autre, l'exigence reste la même.</p>
+				surpris tout le monde — semaine après semaine, le format varie, l'exigence reste la même.</p>
 		</div>
 	</div>
 
+	<!--
+		========================================================================
+		COMMENT AJOUTER UNE NOUVELLE SEMAINE (pour Théo)
+		========================================================================
+		1. Copie tout le bloc <section class="week"> ci-dessous (de <section
+		   class="week"> à </section> inclus), la toute première après ce
+		   commentaire.
+		2. Colle-le juste en dessous de ce commentaire, AU-DESSUS du bloc
+		   existant le plus récent (les nouvelles semaines vont en haut).
+		3. Modifie dans ta copie :
+		   - "Semaine du —" : la date
+		   - Les <h3>, les <p> et le nom de fichier photo
+		4. Une semaine peut n'avoir qu'une seule carte (la "claque") si tu n'as
+		   pas d'accord mets-vin cette semaine-là : dans ce cas, supprime le
+		   deuxième <div class="favorite">...</div> du bloc.
+		========================================================================
+	-->
+
 	<section class="section">
 		<div class="container">
-			<div class="favorites">
 
-				<div class="favorite">
-					<div class="favorite-photo photo-block">Photo bouteille ou moment de dégustation<br>(portrait)
+			<section class="week">
+				<div class="week-date">Semaine du —</div>
+				<div class="favorites">
+
+					<div class="favorite">
+						<div class="favorite-photo photo-block">Photo bouteille ou moment de dégustation<br>(portrait)
+						</div>
+						<div class="kicker">La claque</div>
+						<h3>Nom du domaine, cuvée</h3>
+						<p>Appellation, millésime — pourquoi ce vin a marqué la semaine : un détail de terroir, une
+							surprise en bouche, un contexte particulier.</p>
 					</div>
-					<div class="kicker">La claque</div>
-					<h3>Nom du domaine, cuvée</h3>
-					<p>Appellation, millésime — pourquoi ce vin a marqué la semaine : un détail de terroir, une
-						surprise en bouche, un contexte particulier.</p>
-					<div class="favorite-date">Semaine du —</div>
-				</div>
 
-				<div class="favorite">
-					<div class="favorite-photo photo-block">Photo de l'accord ou du plat<br>(portrait)</div>
-					<div class="kicker">L'accord</div>
-					<h3>Nom du plat + nom du vin</h3>
-					<p>Ce qui a fonctionné dans l'accord, et pourquoi ça vaut le coup de le retenter chez soi.</p>
-					<div class="favorite-date">Semaine du —</div>
-				</div>
+					<div class="favorite">
+						<div class="favorite-photo photo-block">Photo de l'accord ou du plat<br>(portrait)</div>
+						<div class="kicker">L'accord</div>
+						<h3>Nom du plat + nom du vin</h3>
+						<p>Ce qui a fonctionné dans l'accord, et pourquoi ça vaut le coup de le retenter chez soi.</p>
+					</div>
 
-			</div>
+				</div>
+			</section>
+
+			<!-- Les semaines précédentes s'accumulent ici, la plus récente en haut -->
+
 		</div>
 	</section>
 
@@ -133,7 +158,8 @@
 					<div class="footer-col">
 						<h4>Navigation</h4>
 						<a href="prestations.html">Prestations</a>
-						<a href="index.html#about">À propos</a>
+						<a href="carnet.html">Le Carnet</a>
+						<a href="index.html#about">Qui je suis</a>
 						<a href="index.html#contact">Contact</a>
 					</div>
 					<div class="footer-col">

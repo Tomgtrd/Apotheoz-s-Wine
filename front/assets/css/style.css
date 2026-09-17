@@ -604,11 +604,48 @@ header.is-scrolled .nav-toggle span {
 	font-size: 15px;
 }
 
+.favorite .favorite-cuvee {
+	font-family: 'Fraunces', serif;
+	font-style: italic;
+	color: var(--wine-deep);
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.favorite .favorite-pairing {
+	margin-top: 12px;
+	padding-top: 12px;
+	border-top: 1px dashed var(--line);
+}
+
+.favorite .favorite-pairing strong {
+	color: var(--wine-deep);
+	font-weight: 500;
+}
+
 .favorite .favorite-date {
 	margin-top: 10px;
 	font-size: 13px;
 	color: var(--ink-soft);
 	opacity: 0.7;
+}
+
+/* CARNET — regroupement des favoris par semaine (carnet.html) */
+.week {
+	margin-bottom: 90px;
+}
+
+.week:not(:last-child) {
+	padding-bottom: 60px;
+	border-bottom: 1px solid var(--line);
+}
+
+.week-date {
+	font-family: 'Fraunces', serif;
+	font-style: italic;
+	font-size: 18px;
+	color: var(--wine-deep);
+	margin-bottom: 26px;
 }
 
 /* QUOTE BAND */
