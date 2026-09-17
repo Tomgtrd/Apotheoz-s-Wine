@@ -57,12 +57,16 @@
 		   commentaire.
 		2. Colle-le juste en dessous de ce commentaire, AU-DESSUS du bloc
 		   existant le plus récent (les nouvelles semaines vont en haut).
-		3. Modifie dans ta copie :
+		3. Modifie dans ta copie, pour chaque cuvée :
 		   - "Semaine du —" : la date
-		   - Les <h3>, les <p> et le nom de fichier photo
-		4. Une semaine peut n'avoir qu'une seule carte (la "claque") si tu n'as
-		   pas d'accord mets-vin cette semaine-là : dans ce cas, supprime le
-		   deuxième <div class="favorite">...</div> du bloc.
+		   - <h3> : nom du domaine / vigneron
+		   - .favorite-cuvee : nom de la cuvée, appellation, millésime
+		   - le <p> suivant : pourquoi ce vin a marqué la semaine
+		   - .favorite-pairing : l'accord mets-vin conseillé
+		   - le nom de fichier photo
+		4. Une semaine peut n'avoir qu'une seule cuvée si tu n'en as qu'une à
+		   partager cette semaine-là : dans ce cas, supprime le deuxième
+		   <div class="favorite">...</div> du bloc.
 		========================================================================
 	-->
 
@@ -76,17 +80,25 @@
 					<div class="favorite">
 						<div class="favorite-photo photo-block">Photo bouteille ou moment de dégustation<br>(portrait)
 						</div>
-						<div class="kicker">La claque</div>
-						<h3>Nom du domaine, cuvée</h3>
-						<p>Appellation, millésime — pourquoi ce vin a marqué la semaine : un détail de terroir, une
-							surprise en bouche, un contexte particulier.</p>
+						<div class="kicker">Cuvée 1</div>
+						<h3>Nom du domaine / vigneron</h3>
+						<p class="favorite-cuvee">Nom de la cuvée, appellation, millésime</p>
+						<p>Pourquoi ce vin a marqué la semaine : un détail de terroir, une surprise en bouche, un
+							contexte particulier.</p>
+						<p class="favorite-pairing"><strong>Accord conseillé —</strong> nom du plat ou du type de mets
+							qui sublime cette cuvée.</p>
 					</div>
 
 					<div class="favorite">
-						<div class="favorite-photo photo-block">Photo de l'accord ou du plat<br>(portrait)</div>
-						<div class="kicker">L'accord</div>
-						<h3>Nom du plat + nom du vin</h3>
-						<p>Ce qui a fonctionné dans l'accord, et pourquoi ça vaut le coup de le retenter chez soi.</p>
+						<div class="favorite-photo photo-block">Photo bouteille ou moment de dégustation<br>(portrait)
+						</div>
+						<div class="kicker">Cuvée 2</div>
+						<h3>Nom du domaine / vigneron</h3>
+						<p class="favorite-cuvee">Nom de la cuvée, appellation, millésime</p>
+						<p>Pourquoi ce vin a marqué la semaine : un détail de terroir, une surprise en bouche, un
+							contexte particulier.</p>
+						<p class="favorite-pairing"><strong>Accord conseillé —</strong> nom du plat ou du type de mets
+							qui sublime cette cuvée.</p>
 					</div>
 
 				</div>
